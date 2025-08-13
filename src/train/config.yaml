@@ -1,0 +1,15 @@
+experiment_name: svm_birds_multi_label
+run_name: SVC_one_vs_rest
+data_path: data/final.csv
+
+location_mapping:
+  BRY: 0
+  CAL: 1
+
+targets: ["AMRO","BHCO","CHSW","EUST","GRCA","HOSP","HOWR","NOCA","RBGU","RWBL"]
+
+svm:
+  C: 1.9093325625779412
+  kernel: rbf
+  gamma: scale
+  random_state: 42
